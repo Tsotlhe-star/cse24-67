@@ -1,0 +1,146 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #000000;
+    background-image: url('data:image/svg+xml;utf8,<svg opacity="0.03" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle fill="%23333" cx="10" cy="10" r="1"/></svg>');
+}
+
+header {
+    background-color: #1a2a3a;
+    color: rgba(195, 194, 194, 0.119);
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #1a2a3a;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: rgba(227, 15, 15, 0.735);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9900;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 3em;
+    background: rgba(255, 255, 255, 0.441);
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #ff9900;
+}
+
+#characters {
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+}
+
+#characters img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #333;
+    transition: transform 0.3s;
+}
+
+#characters img:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    background-color: #1a2a3a;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 2em;
+}
+#game-modes {
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+}
+
+#game-modes img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #333;
+    transition: transform 0.3s;
+}
+
+#game-modes img:hover {
+    transform: scale(1.02);
+}
+#Warzone {
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+}
+
+#Warzone img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #333;
+    transition: transform 0.3s;
+}
+
+#Warzone img:hover {
+    transform: scale(1.02);
+}
+
+.social-links {
+    margin-top: 1em;
+}
+
+.social-links a {
+    color: #ff9900;
+    margin: 0 0.5em;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 0.5em 0;
+    }
+}
